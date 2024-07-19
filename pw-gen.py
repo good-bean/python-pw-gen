@@ -22,12 +22,12 @@ def makePassword(length):
     for i in range(length - 2):
         password += randomCharacter('ABCDEFGHIJKLMNOPQRSTUVWXYZ'
                                     'abcdefghijklmnopqrstuvwxyz'
-                                    '0123456789+-*/?!@#$%&')
+                                    '0123456789+-*/?!@#$%&()')
     
     randomDigit = randomCharacter('0123456789')
     password = insertAtRandom(password, randomDigit)
 
-    randomSymbol = randomCharacter('+-*/?!@#$%&')
+    randomSymbol = randomCharacter('+-*/?!@#$%&()')
     password = insertAtRandom(password, randomSymbol)
 
     return password
